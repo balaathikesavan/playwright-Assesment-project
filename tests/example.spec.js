@@ -25,7 +25,7 @@ test('Register User', async ({ page }) => {
   await login.verifyLoginSuccess();
   await productPage.home();
   await productPage.selectProduct();
-  console.log("Registered & logged in user:", user.email);
+  console.log("Registered & logged user:", user.email);
   const price = await product.getProductPrice();
   console.log(price);
   const total = await product.getCartTotal();
