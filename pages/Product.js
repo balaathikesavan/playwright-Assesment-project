@@ -29,7 +29,7 @@ export class ProductsPage {
         await expect(this.CartCount).toHaveText("1");
         await this.page.waitForTimeout(3000);
         await this.CartIcon.click();
-        await this.page.waitForTimeout(3000);
+        //await this.page.waitForTimeout(3000);
         
     }
     async getProductPrice() {
@@ -46,6 +46,6 @@ export class ProductsPage {
     async checkOut()
     {
         await this.checkout.click();
-         await this.page.waitForTimeout(3000);
+         //await this.page.waitForTimeout(3000);
     }
 }
